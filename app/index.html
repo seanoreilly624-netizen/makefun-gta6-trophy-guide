@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA 6 Trophy Guide &amp; Tracker — All 55 PS5 Trophies</title>
+<meta name="description" content="Offline guide and tracker for all 55 Grand Theft Auto VI PlayStation 5 trophies: checklist, roadmap to the Platinum, missable flags and a cited guide for every trophy.">
+<link rel="stylesheet" href="./style.css">
+<script src="./app.js" defer></script>
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; Offline guide</p>
+    <h1>Leonida Trophy Guide</h1>
+    <p class="subtitle">Every one of the 55 trophies — 1 Platinum, 2 Gold, 6 Silver, 46 Bronze, 28 hidden — with a guide in our own words, a source named beside each one, and a tracker that remembers your progress.</p>
+    <div class="progress-wrap" id="progressWrap">
+      <div class="progress-line"><strong id="progressCount">0 / 55 earned</strong><span id="progressPct">0%</span></div>
+      <div class="progress-bar" role="progressbar" aria-label="Trophies earned"><div class="progress-fill" id="progressFill"></div></div>
+      <p class="grade-line" id="gradeLine">Platinum 0/1 &middot; Gold 0/2 &middot; Silver 0/6 &middot; Bronze 0/46</p>
+    </div>
+  </div>
+</header>
+
+<nav class="views" aria-label="Views">
+  <button type="button" class="view-btn is-active" data-view="list" id="viewListBtn">Checklist</button>
+  <button type="button" class="view-btn" data-view="roadmap" id="viewRoadmapBtn">Roadmap to Platinum</button>
+</nav>
+
+<main>
+  <section id="listView" aria-label="Trophy checklist">
+    <div class="toolbar">
+      <label class="search-label">Search <input type="search" id="searchBox" placeholder="Search name or description…" autocomplete="off"></label>
+      <div class="filters" id="filterBar" role="group" aria-label="Filter trophies">
+        <button type="button" class="filter-btn is-active" data-filter="all">All 55</button>
+        <button type="button" class="filter-btn" data-filter="story">Story</button>
+        <button type="button" class="filter-btn" data-filter="missable">Missable</button>
+        <button type="button" class="filter-btn" data-filter="collectibles">Collectibles</button>
+        <button type="button" class="filter-btn" data-filter="activities">Activities</button>
+        <button type="button" class="filter-btn" data-filter="earned">Earned</button>
+        <button type="button" class="filter-btn" data-filter="remaining">Remaining</button>
+      </div>
+      <div class="tools">
+        <label class="spoiler-toggle"><input type="checkbox" id="spoilerBox" checked> Hide story spoilers until earned</label>
+        <button type="button" id="exportBtn">Export progress</button>
+        <button type="button" id="importBtn">Import progress</button>
+        <input type="file" id="importFile" accept=".json,application/json" hidden>
+        <button type="button" id="resetBtn">Reset</button>
+      </div>
+      <p class="spoiler-note" id="spoilerNote">Spoiler guard is on: story trophies stay masked until you tick them earned. Turn it off to reveal every name.</p>
+      <p class="count-line" id="countLine"></p>
+    </div>
+    <ol class="trophy-list" id="trophyList"></ol>
+    <p class="empty-note" id="emptyNote" hidden>No trophies match this filter. Try another filter or clear the search.</p>
+  </section>
+
+  <section id="roadmapView" aria-label="Roadmap to the Platinum" hidden>
+    <h2>Roadmap to the Platinum</h2>
+    <p class="roadmap-est" id="roadmapEstimate"></p>
+    <ol class="roadmap" id="roadmapList"></ol>
+    <aside class="save-box">
+      <h3>Save rules that protect the whole run</h3>
+      <ul>
+        <li>No mission replay and no New Game Plus: keep a manual save at the start and end of every chapter.</li>
+        <li>One trophy may be missable — Positive Mental Attitude. Do Lucia&rsquo;s balcony meditation in Chapter 1.</li>
+        <li>Cheats disable trophies and saving on your trophy save. Keep them off.</li>
+        <li>Everything except that one meditation stays available in free roam after the credits.</li>
+      </ul>
+    </aside>
+  </section>
+</main>
+
+<footer>
+  <p>Names, descriptions and grades are the official PlayStation list as published on Exophase and PSNProfiles. Guides are written in our own words for this entry; each one names its sources and copies none of their text. Five secret trophies have no confirmed method yet at launch — their guides say so honestly. No Rockstar logo or artwork is used anywhere in this guide. Works fully offline: it loads only its own files and makes no network request.</p>
+  <p class="foot-sources">Sources consulted: Exophase, PSNProfiles, PowerPyx, GTABase, GTA Zone, GTA Vibes, KeenGamer, OutputLag, WikiGTAVI, PlanetGTA6.</p>
+</footer>
+</body>
+</html>
